@@ -22,3 +22,11 @@ services:
       - ./data/postgres/data:/var/lib/postgresql/data/
     env_file:
       - ./dotenv_files/.env
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 800M
+        reservations:
+          cpus: "1"
+          memory: 800M
