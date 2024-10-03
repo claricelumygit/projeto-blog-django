@@ -4,9 +4,6 @@
     {% include 'blog/partials/_head.html' %}
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc loco discipulos quaerere videtur, ut, qui asoti esse velint, philosophi ante fiant. Quare hoc videndum est, possitne nobis hoc ratio philosophorum dare. Haec para/doca illi, nos admirabilia dicamus.</p>
-    <h1>Exemplo: {{ site_setup.title }}</h1>
-
     {% include 'blog/partials/_header.html' %}
 
     {% block content %}{% endblock content %}
@@ -14,5 +11,7 @@
     {% include 'blog/partials/_pagination.html' %}
 
     {% include 'blog/partials/_footer.html' %}
+
+    {% include 'blog/partials/_temp.html' %}
 </body>
 </html>
